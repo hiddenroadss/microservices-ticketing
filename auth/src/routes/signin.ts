@@ -2,8 +2,7 @@ import express, {Request, Response, NextFunction} from 'express';
 import {body} from 'express-validator';
 import jwt from 'jsonwebtoken';
 
-import {validateRequest} from '../middlewares/validateRequest';
-import {BadRequestError} from '../errors/badRequestError';
+import {validateRequest, BadRequestError} from '@hirotickets/common';
 import {User} from '../models/user';
 import {Password} from '../services/password';
  
